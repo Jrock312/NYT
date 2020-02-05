@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/style.css">
+    <title>NYT Searcher</title>
+    
 </head>
+
 <body>
+    <nav class="navbar fixed-top navbar-dark bg-primary">
+        <a class="navbar-brand" href="#!">New York Times Searcher</a>
+      </nav>
+      <hr>
+      <br>
+    
+      <div class="container">
+        <div class="col-6">
+            <form>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Seacrh</label>
+                  <input type="text" class="form-control" id="SearchId" placeholder="Enter Keyword">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Number of Articles</label>
+                  <input type="number" min = 1 max =10 class="form-control" id="RecordsId" placeholder="1">
+                </div>
+                <form>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Start Year</label>
+                      <input type="text" class="form-control" id="sYear" placeholder="2000">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput2">End Year</label>
+                      <input type="text" class="form-control" id="eYear" placeholder="2020">
+                    </div>
+                  </form>
+                  
+              </form>
+              
+          </div>
+          <button type="button" class="btn btn-primary" id=search>Search</button>
+          <button type="button" class="btn btn-primary" id=clear>clear</button>
+      </div>
+    
+      <div class="Articles"></div>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="script.js"></script>
+      <script src="1script.js"></script>
     
 </body>
 </html>
